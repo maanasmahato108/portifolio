@@ -58,7 +58,7 @@ body{
 }
 
 #navlist ul a{
-    margin: 1rem;
+    margin: 0.5rem;
     color: white;
     text-decoration: none;
     font-size: 1.5rem;
@@ -74,6 +74,14 @@ body{
         display: flex;
         flex-direction: row;
         margin: 1rem;
+
+      
+    }
+
+    #navlogo{
+        height: 2rem;
+        width: 23%;
+
     }
 
 
@@ -96,10 +104,6 @@ body{
 
     #navlist ul{
         text-align: center;
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        justify-content: space-evenly;
-        border-radius: 10% 0% 10% 0%;
     }
 }
 
@@ -107,17 +111,11 @@ body{
     #navbar{
         display: flex;
         flex-direction: column;
-        margin: 1rem;
     }
 
 
     #navlist ul{
         text-align: center;
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        justify-content: space-evenly;
-        border-radius: 10% 0% 10% 0%;
-        padding: 2rem;
     }
 }
 
