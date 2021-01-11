@@ -1,0 +1,221 @@
+body::before{
+    background: url(./images/portifolioBG.jpg) no-repeat center center/cover fixed;
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    position: absolute;
+
+}
+body{
+    position: relative;
+}
+
+/* home */
+
+#home{
+    text-align: center;
+    font-size: larger;
+}
+
+#home h1{
+    font-size: 7vh;
+    animation-name: homeheading;
+    animation-duration: 3.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    animation-timing-function: ease-in-out;
+    position: relative;
+}
+
+@keyframes homeheading{
+    0% {}
+    25% {color: white; transform: rotateX(50deg);}
+    50% {color: pink; transform: rotateY(50deg);}
+    75% {color: #0f0; transform: rotateZ(180deg);}
+    100% {color: black; transform: rotateZ(360deg);}
+
+}
+
+#home p{
+    font-size: 5vh;
+}
+/*navigation section*/
+
+#navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#navlogo{
+    text-align: left;
+}
+
+#navlist{
+    text-align: right; 
+}
+
+#navlist ul a{
+    margin: 1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#navlist ul{
+    margin: 2rem;
+    padding: 1rem;
+}
+
+@media (min-width: 651px) and (max-width: 900px){
+    #navbar{
+        display: flex;
+        flex-direction: row;
+        margin: 1rem;
+    }
+
+
+    #navlist ul{
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        justify-content: space-evenly;
+        border-radius: 10% 0% 10% 0%;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 300px){
+    #navbar{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    #navlist ul{
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        justify-content: space-evenly;
+        border-radius: 10% 0% 10% 0%;
+    }
+}
+
+@media (min-width:301px) and (max-width: 650px){
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+
+    #navlist ul{
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        justify-content: space-evenly;
+        border-radius: 10% 0% 10% 0%;
+        padding: 2rem;
+    }
+}
+
+
+
+/*About me section*/
+
+#introduction{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-items: center;    
+}
+
+.introcontent{
+    border: 2px solid black;
+    padding: 1vh;
+    margin: 5%;
+    background-color: white;
+    color: black;
+}
+
+#introimage img{
+    height: 100%;
+    width: 100%;
+}
+#introread p{
+    text-align: center;
+}
+#introread h1{
+    font-size: large;
+    text-align: center;
+}
+
+@media (max-width: 750px){
+    #introduction{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+/* Contact me*/
+
+#contactme{
+    text-align: center;
+}
+
+#link{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.a{
+    color: black;
+}
+
+/* projects */
+
+
+#projects{
+    text-align: center;
+}
+
+#projectContent{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-content: space-evenly;
+}
+
+.website{
+    border: 2px solid black;
+    margin: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    background-color: white;
+    color: black;
+    border-radius: 10%;
+    justify-content: space-evenly;
+    height: auto;
+    width: auto;
+
+}
+
+.website a img{
+    height: 40%;
+    width: 40%;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.website p{
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 725px){
+    #projectContent{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
