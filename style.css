@@ -220,6 +220,8 @@ body{
     justify-content: space-evenly;
     height: auto;
     width: auto;
+    padding: 1rem;
+    padding-bottom: 3rem;
 
 }
 
