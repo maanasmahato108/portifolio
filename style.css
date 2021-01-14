@@ -217,3 +217,23 @@ body{
         grid-template-columns: auto;
     }
 }
+
+/* achievements */
+
+#achieve_intro{
+    text-align: center;
+    background-color: gray;
+    padding: 2rem;
+}
+
+#achievement_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#achievement_section img{
+    height: 80%;
+    width: 80%;
+    margin: 10%;
+    margin-top: 0%;
+}
