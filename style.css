@@ -1,5 +1,5 @@
 body::before{
-    background: url(./images/portifolioBG.jpg) no-repeat center center/cover fixed;
+    background: url(./images/Modern-Background-02.jpg) no-repeat center center/cover fixed;
     content: "";
     height: 100%;
     width: 100%;
@@ -59,9 +59,13 @@ body{
 
 #navlist ul a{
     margin: 0.5rem;
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 1.5rem;
+}
+
+#navlist ul a:hover{
+    color: rgb(39, 143, 14);
 }
 
 #navlist ul{
@@ -69,13 +73,25 @@ body{
     padding: 1rem;
 }
 
+#navbar2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: turquoise;
+    margin-top: 2rem;
+}
+
+
 @media (min-width: 651px) and (max-width: 900px){
     #navbar{
         display: flex;
         flex-direction: row;
-        margin: 1rem;
-
-      
+        margin: 1rem;      
+    }
+    #navbar2{
+        display: flex;
+        flex-direction: row;
+        margin: 1rem;      
     }
 
     #navlogo{
@@ -100,6 +116,10 @@ body{
         display: flex;
         flex-direction: column;
     }
+    #navbar2{
+        display: flex;
+        flex-direction: column;
+    }
 
 
     #navlist ul{
@@ -109,6 +129,10 @@ body{
 
 @media (min-width:301px) and (max-width: 650px){
     #navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    #navbar2{
         display: flex;
         flex-direction: column;
     }
@@ -236,4 +260,12 @@ body{
     width: 80%;
     margin: 10%;
     margin-top: 0%;
+}
+
+@media (max-width: 600px){
+    #achievement_section img{
+        height: 98%;
+        width: 98%;
+        margin: 1%;
+    }    
 }
